@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  gap: 3.6rem;
+  margin: 2.4rem 0 8rem;
+
+  &__title {
+    @include ff1;
+    @include font(1.8rem, 2.4rem, 600, $color1);
+    margin-bottom: 0.8rem;
+  }
+  &__subtitle {
+    @include font(1.2rem, 1.6rem, 400, $color2);
+    margin-bottom: 1.8rem;
+  }
+
+  &__rate {
+    display: flex;
+    @include font(1.4rem, 2rem, 400, $color1);
+
+    &-item {
+      &:nth-child(2){
+        margin-left: 1.4rem;
+        margin-right: 0.4rem;
+      }
+    }
+  }
+}

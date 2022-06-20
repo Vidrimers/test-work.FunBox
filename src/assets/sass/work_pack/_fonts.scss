@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+$open-sans:'Open Sans', sans-serif;
+$montserrat:'Montserrat', sans-serif;
+$font1: $open-sans;
+$font2: $montserrat;
+// $font2: $merri;
+@mixin ff1 {font-family: $font1;}
+@mixin ff2 {font-family: $font2;}
+@mixin font($size, $lh, $weight, $color) {font-size: $size;line-height: $lh;font-weight: $weight;color: $color;}
+@mixin font-lite($size, $lh) {font-size: $size;line-height: $lh;}

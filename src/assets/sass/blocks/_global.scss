@@ -1,0 +1,40 @@
+body {
+  background: $color3;
+  @include ff1;
+  @include font(1.6rem, 2.2rem, 400, $color1);
+}
+.mobile{
+  &__logo-link{
+    display: none;
+  }
+  &__logo {
+      max-width: 26rem;
+  }
+  &__title {
+    display: none;
+    text-align: center;
+    margin: 0 auto 2rem;
+    max-width: 59rem;
+    text-transform: uppercase;
+    color: $color2;
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    span {
+      text-transform: none;
+      color: $color2;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+}
+
+a {
+  color: $color1;
+}
+
+.container {
+  max-width: 142rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
